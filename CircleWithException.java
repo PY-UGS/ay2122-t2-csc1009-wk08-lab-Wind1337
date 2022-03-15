@@ -4,7 +4,7 @@ public class CircleWithException {
     private double radius;
 
     public CircleWithException(double radius){
-        if(radius < 0){
+        if(radius <= 0){
             throw new IllegalArgumentException("Input not a positive number");
         }
         else {
@@ -17,7 +17,7 @@ public class CircleWithException {
     }
 
     public void setRadius(double radius) {
-        if(radius < 0){
+        if(radius <= 0){
             throw new IllegalArgumentException("Input not a positive number");
         }
         else {
